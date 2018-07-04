@@ -44,10 +44,33 @@
 npm i v-suggest --save
 ```
 
-## Deploy on your component
+Include plugin in your `main.js` file
 
 ```js
 import Vue from 'vue';
 import vSuggest from 'v-suggest';
 Vue.use(vSuggest);
+```
+
+## Deploy on your component
+
+```vue
+<template>
+    <v-suggest :data="example" show-field="name" v-model="myValue"></v-suggest>
+</template>
+
+<script>
+export default {
+    data(){
+        return {
+            myValue: '',
+            example: [
+                {id:1 ,name:'Chicago Bulls',desc:'芝加哥公牛'},
+                {id:2 ,name:'Cleveland Cavaliers',desc:'克里夫兰骑士'},
+                {...}
+            ]
+        };
+    }
+};
+</script>
 ```

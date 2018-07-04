@@ -25,6 +25,7 @@
         components: { 'v-dropdown': drop },
         props: {
             data: Array,
+            value: String,
             keyField: {
                 type: String,
                 default: 'id'
@@ -36,20 +37,23 @@
         },
         data(){
             return {
-                text: '',
+                text: this.value,
                 list: [],
                 highlight: -1,
                 width: '',
                 show: false,
-                last: '',
+                last: null,
                 selected: null
             };
         },
         methods: {
             open(){
-                //if(this.disabled) return;
-                if(!this.show) this.show = true;
-                //else this.inputFocus();
+                if(!this.list.length) this.populate();
+                this.$nextTick(()=>{
+                    //if(this.disabled) return;
+                    if(!this.show) this.show = true;
+                    //else this.inputFocus();
+                });
             },
             close(){
                 this.$refs.drop.$emit('show', false);
@@ -97,9 +101,11 @@
                 this.close();
             },
             next(){
+                this.open();
                 if(this.highlight < (this.list.length-1)) {
                     //this.populate();
                     this.highlight++;
+
 
                     let that = this;
                     this.$nextTick(()=>{
@@ -127,7 +133,7 @@
             },
             populate(){
                 if(Array.isArray(this.data) && this.data.length){
-                    if(this.text){
+                    //if(this.text){
                         let that = this, val = '';
                         if(this.text === this.selected) val = '';
                         else val = this.text;
@@ -140,10 +146,11 @@
                         let info = this.$refs.input.getBoundingClientRect();
                         this.width = (info.width > 200 ? info.width : 200) - 2;
                         that.last = this.text;
-                        this.open();
-                    }else{
-                        this.close();
-                    }
+                        if(this.list.length) this.open();
+                        else this.close();
+                    //}else{
+                    //    this.close();
+                    //}
                 }
             }
         },
@@ -158,6 +165,9 @@
                     });
                     */
                 }
+            },
+            text(val){
+                this.$emit('input', val);
             }
         },
         mounted(){
@@ -165,7 +175,7 @@
             this.$el.className = 'v-suggest';
             this.$refs.input.className = tmpClass;
 
-            this.populate();
+            //this.populate();
         }
     }
 </script>

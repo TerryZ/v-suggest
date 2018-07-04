@@ -4,16 +4,16 @@
 
 <br>
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/v-suggest"><img src="https://img.shields.io/npm/v/v-suggest.svg"></a>
-  <a href="https://mit-license.org/"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg"></a>
-  <a href="https://www.npmjs.com/package/v-suggest"><img src="https://img.shields.io/npm/dy/v-suggest.svg"></a>
-</p>
-
 <p align="center"><img src="https://terryz.github.io/image/v-suggest/v-suggest.png" alt="v-suggest" ></p>
 
 <p align="center">
   A <strong>Vue2</strong> plugin for input suggestions by autocomplete
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/v-suggest"><img src="https://img.shields.io/npm/v/v-suggest.svg"></a>
+  <a href="https://mit-license.org/"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg"></a>
+  <a href="https://www.npmjs.com/package/v-suggest"><img src="https://img.shields.io/npm/dy/v-suggest.svg"></a>
 </p>
 
 <p align="center">

@@ -38,7 +38,7 @@
         },
         data(){
             return {
-                text: this.value,
+                text: typeof(this.value) === 'undefined'?'':this.value,
                 list: [],
                 highlight: -1,
                 width: '',
@@ -140,8 +140,8 @@
                         else val = this.text;
                         if(this.text !== this.last){
                             this.list = this.data.concat().filter(value=>{
-                                let result = that.getRow(value);
-                                return String(result).toLowerCase().includes(val.toLowerCase())
+                                let result = that.getRow(value).toLowerCase();
+                                return String(result).includes(val.toLowerCase());
                             });
                         }
                         let info = this.$refs.input.getBoundingClientRect();
@@ -160,11 +160,6 @@
                 if (val) {
                     let that = this;
                     this.$refs.drop.$emit('show', true, this.$refs.input);
-                    /*
-                    this.$nextTick(() => {
-                        that.$refs.search.focus({preventScroll: true});
-                    });
-                    */
                 }
             },
             text(val){

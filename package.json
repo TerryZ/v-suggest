@@ -1,7 +1,7 @@
 {
   "name": "v-suggest",
   "description": "A Vue2 plugin for input suggestions by autocomplete",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "TerryZ <terry5@foxmail.com>",
   "license": "MIT",
   "main": "dist/v-suggest.js",

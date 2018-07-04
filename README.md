@@ -46,7 +46,7 @@ npm i v-suggest --save
 
 ## Deploy on your component
 
-```bash
+```js
 import Vue from 'vue';
 import vSuggest from 'v-suggest';
 Vue.use(vSuggest);

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div :name="name">
         <input type="text" v-model.trim="text"
                @keyup="processKey"
                @keydown="processControl"
@@ -26,6 +26,7 @@
         props: {
             data: Array,
             value: String,
+            name:String,
             keyField: {
                 type: String,
                 default: 'id'

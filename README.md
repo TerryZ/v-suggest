@@ -7,7 +7,7 @@
 <p align="center"><img src="https://terryz.github.io/image/v-suggest/v-suggest.png" alt="v-suggest" ></p>
 
 <p align="center">
-  A <strong>Vue2</strong> plugin for input suggestions by autocomplete
+  A <strong>Vue2</strong> plugin for input content suggestions, support keyboard to quick pick
 </p>
 
 <p align="center">

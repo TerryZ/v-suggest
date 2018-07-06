@@ -7,7 +7,7 @@
 <p align="center"><img src="https://terryz.github.io/image/v-suggest/v-suggest.png" alt="v-suggest" ></p>
 
 <p align="center">
-  A <strong>Vue2</strong> plugin for input suggestions by autocomplete
+  A <strong>Vue2</strong> plugin for input content suggestions, support keyboard to quick pick
 </p>
 
 <p align="center">
@@ -21,6 +21,15 @@
 </p>
 
 <br><br><br><br><br>
+
+## Demo、Document、Changelog
+Explorer on
+
+- [English site](https://terryz.github.io/vue/#/suggest)
+- [国内站点](https://terryz.gitee.io/vue/#/suggest)
+
+
+<br><br>
 
 ## Vue plugin series
 

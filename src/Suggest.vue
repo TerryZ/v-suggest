@@ -162,6 +162,9 @@
                     this.$refs.drop.$emit('show', true, this.$refs.input);
                 }
             },
+            value(val){
+                this.text = val;
+            },
             text(val){
                 this.$emit('input', val);
             }

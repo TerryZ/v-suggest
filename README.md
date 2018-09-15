@@ -16,9 +16,6 @@
   <a href="https://www.npmjs.com/package/v-suggest"><img src="https://img.shields.io/npm/dy/v-suggest.svg"></a>
 </p>
 
-<p align="center">
-  <a href="https://nodei.co/npm/v-suggest/"><img src="https://nodei.co/npm/v-suggest.png"></a>
-</p>
 
 <br><br><br><br><br>
 
@@ -28,6 +25,7 @@ Explorer on
 - [English site](https://terryz.github.io/vue/#/suggest)
 - [国内站点](https://terryz.gitee.io/vue/#/suggest)
 
+<a href="https://nodei.co/npm/v-suggest/"><img src="https://nodei.co/npm/v-suggest.png"></a>
 
 <br><br>
 

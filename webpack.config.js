@@ -7,7 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     publicPath: 'dist/',
     filename: 'v-suggest.js',
-	library: 'vSelectPage',
+	library: 'vSuggest',
 	libraryTarget: 'umd',
 	umdNamedDefine: true
   },

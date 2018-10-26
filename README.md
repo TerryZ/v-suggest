@@ -25,8 +25,6 @@ Explorer on
 - [English site](https://terryz.github.io/vue/#/suggest)
 - [国内站点](https://terryz.gitee.io/vue/#/suggest)
 
-<a href="https://nodei.co/npm/v-suggest/"><img src="https://nodei.co/npm/v-suggest.png"></a>
-
 <br><br>
 
 ## Vue plugin series
@@ -60,6 +58,7 @@ import Vue from 'vue';
 import vSuggest from 'v-suggest';
 Vue.use(vSuggest);
 ```
+<a href="https://nodei.co/npm/v-suggest/"><img src="https://nodei.co/npm/v-suggest.png"></a>
 
 ## Deploy on your component
 

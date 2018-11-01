@@ -4,7 +4,8 @@
                @keyup="processKey"
                @keydown="processControl"
                @focus="populate"
-               ref="input">
+               ref="input"
+               :placeholder="placeholder">
 
         <v-dropdown ref="drop" @show-change="dropdownVisible">
             <div class="sg-results" :style="{width: width+'px'}" ref="list">
@@ -27,6 +28,10 @@
             data: Array,
             value: String,
             name:String,
+            placeholder: {
+                type: String,
+                default: "Type for select."
+            },
             keyField: {
                 type: String,
                 default: 'id'

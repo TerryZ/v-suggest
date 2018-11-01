@@ -18,12 +18,12 @@
     "web",
     "vue",
     "vuejs",
-	"vue2",
+    "vue2",
     "webpack",
     "selector",
-	"suggest",
-	"input",
-	"autocomplete"
+    "suggest",
+    "input",
+    "autocomplete"
   ],
   "browserslist": [
     "> 1%",

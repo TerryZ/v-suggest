@@ -60,6 +60,8 @@ Vue.use(vSuggest);
 ```
 <a href="https://nodei.co/npm/v-suggest/"><img src="https://nodei.co/npm/v-suggest.png"></a>
 
+<br><br>
+
 ## Deploy on your component
 
 ```vue

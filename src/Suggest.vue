@@ -3,7 +3,6 @@
         <input type="text" v-model.trim="text" :placeholder="placeholder" :disabled="disabled" ref="input"
                @keyup="processKey"
                @keydown="processControl"
-               @blur="close"
                @focus="open" >
         <div class="sg-clear"
              @click="clear"
@@ -14,12 +13,12 @@
 
         <v-drop-down ref="drop" :re-open="false" :animated="false" @show-change="showChange">
             <ul class="sg-results" :style="{width: width+'px'}" ref="list" >
-                <li v-for="(row,index) in list" :key="index"
-                    :class="{'sg-results__row':true, 'sg-over':highlight === index}"
+                <li :key="index" v-for="(row,index) in list"
+                    :class="['sg-results__row',{'sg-over': highlight === index}]"
                     @click="selectItem(row)"
                     @mouseenter="highlight = index"
                     @mouseleave="highlight = -1"
-                    v-html="getRow(row)"></li>
+                    v-html="getRow(row)" ></li>
             </ul>
         </v-drop-down>
     </div>
@@ -110,7 +109,7 @@
                             this.next();
                             break;
                         case 9: // tab
-                        case 13:// return
+                        case 13:// enter
                             if(this.highlight !== -1) this.selectItem(this.list[this.highlight]);
                             break;
                         case 27:// escape

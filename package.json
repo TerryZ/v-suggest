@@ -1,7 +1,7 @@
 {
   "name": "v-suggest",
   "description": "A Vue2 plugin for input suggestions by autocomplete",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "author": "TerryZ <terry5@foxmail.com>",
   "license": "MIT",
   "main": "dist/v-suggest.js",
@@ -10,7 +10,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "v-dropdown": "^1.0.6",
+    "v-dropdown": "^1.0.7",
     "vue": "^2.5.21"
   },
   "keywords": [

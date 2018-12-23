@@ -1,7 +1,7 @@
 {
   "name": "v-suggest",
   "description": "A Vue2 plugin for input suggestions by autocomplete",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "author": "TerryZ <terry5@foxmail.com>",
   "license": "MIT",
   "main": "dist/v-suggest.js",
@@ -10,7 +10,8 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "vue": "^2.5.11"
+    "v-dropdown": "^1.0.6",
+    "vue": "^2.5.21"
   },
   "keywords": [
     "front-end",
@@ -36,12 +37,12 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-3": "^6.24.1",
     "cross-env": "^5.0.5",
-    "css-loader": "^0.28.7",
+    "css-loader": "^0.28.11",
     "file-loader": "^1.1.4",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6",
-    "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^6.0.7",
+    "vue-loader": "^13.7.3",
+    "vue-template-compiler": "^2.5.21",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
   }

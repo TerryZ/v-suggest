@@ -26,7 +26,7 @@
 </template>
 
 <script>
-    import dropDown from 'v-dropdown';
+    import drop from 'v-dropdown';
     export default {
         name: "v-suggest",
         components: { 'v-drop-down': drop },

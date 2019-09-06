@@ -19,13 +19,52 @@
 
 <br><br><br><br><br>
 
-## Demos and Documents
+## Examples and Documentation
+
 Explorer on
 
 - [English site](https://terryz.github.io/vue/#/suggest)
 - [国内站点](https://terryz.gitee.io/vue/#/suggest)
 
-<br><br>
+## Installation
+
+<a href="https://nodei.co/npm/v-suggest/"><img src="https://nodei.co/npm/v-suggest.png"></a>
+
+```
+npm i v-suggest -S
+```
+
+Include and install plugin in your `main.js` file
+
+```js
+import Vue from 'vue'
+import vSuggest from 'v-suggest'
+Vue.use(vSuggest)
+```
+
+## Deploy on your component
+
+```vue
+<template>
+  <v-suggest :data="example" show-field="name" v-model="myValue">
+  </v-suggest>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      myValue: '',
+      example: [
+        { id: 1, name: 'Chicago Bulls', desc: '芝加哥公牛' },
+        { id: 2, name: 'Cleveland Cavaliers', desc: '克里夫兰骑士' },
+        { ... }
+      ]
+    }
+  }
+}
+</script>
+```
 
 ## Vue plugin series
 
@@ -42,45 +81,3 @@ Explorer on
 | [v-suggest](https://github.com/TerryZ/v-suggest) | [![npm version](https://img.shields.io/npm/v/v-suggest.svg)](https://www.npmjs.com/package/v-suggest) | A Vue2 plugin for input suggestions by autocomplete |
 | [v-playback](https://github.com/TerryZ/v-playback) | [![npm version](https://img.shields.io/npm/v/v-playback.svg)](https://www.npmjs.com/package/v-playback) | A Vue2 plugin to make video play easier |
 | [v-selectmenu](https://github.com/TerryZ/v-selectmenu) | [![npm version](https://img.shields.io/npm/v/v-selectmenu.svg)](https://www.npmjs.com/package/v-selectmenu) | A simple, easier and highly customized menu solution |
-
-<br><br>
-
-## Install
-
-``` bash
-npm i v-suggest --save
-```
-
-Include plugin in your `main.js` file
-
-```js
-import Vue from 'vue';
-import vSuggest from 'v-suggest';
-Vue.use(vSuggest);
-```
-<a href="https://nodei.co/npm/v-suggest/"><img src="https://nodei.co/npm/v-suggest.png"></a>
-
-<br><br>
-
-## Deploy on your component
-
-```vue
-<template>
-    <v-suggest :data="example" show-field="name" v-model="myValue"></v-suggest>
-</template>
-
-<script>
-export default {
-    data(){
-        return {
-            myValue: '',
-            example: [
-                {id:1 ,name:'Chicago Bulls',desc:'芝加哥公牛'},
-                {id:2 ,name:'Cleveland Cavaliers',desc:'克里夫兰骑士'},
-                {...}
-            ]
-        };
-    }
-};
-</script>
-```

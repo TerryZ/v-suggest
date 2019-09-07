@@ -21,7 +21,7 @@
 
 ## Examples and Documentation
 
-Explorer on
+Live example on [CodePen](https://codepen.io/terry05/pen/KKPQwxP), more examples and documentation please visit below sites
 
 - [English site](https://terryz.github.io/vue/#/suggest)
 - [国内站点](https://terryz.gitee.io/vue/#/suggest)

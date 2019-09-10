@@ -37,9 +37,18 @@ npm i v-suggest -S
 Include and install plugin in your `main.js` file
 
 ```js
+// Global install as a vue plugin
 import Vue from 'vue'
 import vSuggest from 'v-suggest'
 Vue.use(vSuggest)
+
+// Import Suggest as a local component
+import { Suggest } from 'v-suggest'
+export default {
+  components: {
+    'v-suggest': Suggest
+  }
+}
 ```
 
 ## Deploy on your component

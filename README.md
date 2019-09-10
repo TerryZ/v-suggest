@@ -51,7 +51,7 @@ export default {
 }
 ```
 
-## Deploy on your component
+## Usage
 
 ```vue
 <template>

@@ -14,8 +14,8 @@
   <a href="https://www.npmjs.com/package/v-suggest"><img src="https://img.shields.io/npm/v/v-suggest.svg"></a>
   <a href="https://mit-license.org/"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg"></a>
   <a href="https://www.npmjs.com/package/v-suggest"><img src="https://img.shields.io/npm/dy/v-suggest.svg"></a>
+  <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg"></a>
 </p>
-
 
 <br><br><br><br><br>
 

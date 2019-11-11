@@ -34,11 +34,11 @@ export default {
           value: this.text.trim()
         },
         on: {
-          keyup: this.processKey,
           keydown: this.processControl,
-          focus: this.open,
+          focus: this.focus,
           input: e => {
             this.text = e.target.value.trim()
+            this.search(e)
           }
         },
         ref: 'input'

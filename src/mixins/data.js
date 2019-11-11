@@ -17,7 +17,7 @@ export default {
     placeholder: String,
     delay: {
       type: Number,
-      default: 0.1
+      default: 0.2
     },
     disabled: {
       type: Boolean,
@@ -26,6 +26,10 @@ export default {
     maxLength: {
       type: Number,
       default: 0
+    },
+    fullList: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -35,7 +39,6 @@ export default {
       highlight: -1,
       width: 0,
       show: false,
-      last: null,
       lastInputTime: -1
     }
   },

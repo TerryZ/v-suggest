@@ -9,7 +9,7 @@ export default {
       if (this.text.trim()) {
         this.checkIfOpen(this.populate())
       } else {
-        this.checkIfOpen(this.fullList ? this.listed() : [])
+        this.checkIfOpen(this.defaultList())
       }
     },
     /**
@@ -40,10 +40,9 @@ export default {
       this.width = width > MIN_WIDTH ? width : MIN_WIDTH
     },
     clear () {
-      this.close(() => {
-        this.text = ''
-        this.list = []
-      })
+      this.text = ''
+      this.$emit('clear')
+      this.$refs.input.focus()
     },
     reset () {
       this.highlight = -1
@@ -77,6 +76,12 @@ export default {
         return new RegExp(text).test(String(result))
       })
       return this.listed(list)
+    },
+    /**
+     * The default list without search
+     */
+    defaultList () {
+      return this.fullList ? this.listed() : []
     },
     listed (list) {
       if (!list) list = this.data

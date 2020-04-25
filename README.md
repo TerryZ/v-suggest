@@ -37,10 +37,10 @@ npm i v-suggest -S
 Include and install plugin in your `main.js` file
 
 ```js
-// Global install as a vue plugin
+// Globally install plugin
 import Vue from 'vue'
-import vSuggest from 'v-suggest'
-Vue.use(vSuggest)
+import Suggest from 'v-suggest'
+Vue.use(Suggest)
 
 // Import Suggest as a local component
 import { Suggest } from 'v-suggest'

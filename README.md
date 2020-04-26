@@ -55,8 +55,11 @@ export default {
 
 ```vue
 <template>
-  <v-suggest :data="example" show-field="name" v-model="myValue">
-  </v-suggest>
+  <v-suggest
+    :data="example"
+    show-field="name"
+    v-model="myValue"
+  ></v-suggest>
 </template>
 
 <script>
